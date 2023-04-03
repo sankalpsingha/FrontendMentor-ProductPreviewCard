@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/output.css">
     <title>Tailwind Starter</title>
 </head>
 <body>
-    <h1 class="underline">Hello</h1>
+    <div id="body-wrapper" class="flex h-screen justify-center items-center bg-primary-cream">
+        <!-- Card -->
+        <div class="rounded-lg bg-white max-w-md mx-7">
+            <div class="flex flex-col space-y-5">
+                <img src="images/image-product-mobile.jpg" alt="image" class="mb-3 rounded-t-lg">
+                <div class="flex flex-col space-y-3 px-10 pb-10">
+                    <h3 class="font-body uppercase text-neutral-dark-grayish-blue tracking-widest">Perfume</h3>
+                    <h1 class="font-heading text-4xl">Gabrielle Essence Eau De Parfum</h1>
+                    <p class="font-body text-neutral-dark-grayish-blue leading-6 text-sm">A floral, solar and voluptions interpretation composed by Olivier Polge, Perfumer-Creator for the house of Chanel.</p>
+                    <!-- Pricing section -->
+                    <div class="pricing-section flex space-x-5 py-3">
+                        <span class="font-heading text-4xl text-primary-dark-cyan">$149.99</span>
+                        <span class="font-body line-through">$169.99</span>
+                    </div>
+                    <a href="#" class="rounded-lg py-3 px-6 bg-primary-dark-cyan text-white text-center hover:bg-neutral-very-dark-blue duration-200 font-body">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
